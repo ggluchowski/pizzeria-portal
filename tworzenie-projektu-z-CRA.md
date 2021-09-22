@@ -46,7 +46,8 @@ touch src/redux/store.js src/redux/globalRedux.js
 ```
 yarn add npm-run-all node-sass react-router-dom redux react-redux enzyme enzyme-adapter-react-16 react-test-renderer
 
-yarn add -D husky lint-staged redux-devtools-extension
+yarn add -D lint-staged redux-devtools-extension
+yarn add -D husky@4.2
 ```
 
 ## 6. Uzupełnienie konfiguracji `package.json`
