@@ -181,6 +181,13 @@ yarn add typescript @types/node @types/react @types/react-dom @types/jest
 ​
 Pozwoli Ci to na sprawdzanie aplikacji bezpośrednio, bez użycia `react-scripts`, np. za pomocą komendy `yarn lint`.
 
+# UWAGA bład podczas kompilacji SASS, aby naprawić:
+
+npm install sass-loader@^10.0.5 node-sass --save-dev
+
+# Eslin na bierząco monitorujący projekt
+
+yarn add -D eslint-watch
 
 # Uruchamianie projektu
 
