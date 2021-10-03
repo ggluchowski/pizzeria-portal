@@ -1,16 +1,17 @@
 import React from 'react';
 import styles from './PizzaEvents.module.scss';
 import PropTypes from 'prop-types';
+import FormId from '../../common/FormId/FormId';
 
-const PizzaEventsId = ({match}) => (
+const PizzaEventsId = ({location}) => (
   <div className={styles.component}>
-    <h2>PizzaEventsId view</h2>
-    ID: {match.params.id}
+
+    <FormId {...location}/>
   </div>
 );
 
 PizzaEventsId.propTypes = {
-  match: PropTypes.object,
+  location: PropTypes.object,
 };
 
 export default PizzaEventsId;

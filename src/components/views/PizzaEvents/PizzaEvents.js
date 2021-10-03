@@ -6,7 +6,7 @@ import { withRouter } from 'react-router';
 
 const PizzaEvents = ({id}) => (
   <div className={styles.component}>
-    <h2>PizzaEvents view</h2>
+
     <Link to={process.env.PUBLIC_URL + '/tables/pizzaEvents/new'}>Event NEW</Link>
     <br />
     <Link to={process.env.PUBLIC_URL + `/tables/pizzaEvents/${id}`}>Event ID</Link>

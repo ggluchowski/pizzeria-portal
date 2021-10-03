@@ -1,16 +1,17 @@
 import React from 'react';
 import styles from './Ordering.module.scss';
 import PropTypes from 'prop-types';
+import FormOrderId from '../../common/FormOrderId/FormOrderId';
 
-const OrderId = ({match}) => (
+const OrderId = ({ location }) => (
   <div className={styles.component}>
-    <h2>OrderId view</h2>
-    ID: {match.params.id}
+
+    <FormOrderId {...location} />
   </div>
 );
 
 OrderId.propTypes = {
-  match: PropTypes.object,
+  location: PropTypes.object,
 };
 
 export default OrderId;
