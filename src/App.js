@@ -8,7 +8,7 @@ import MainLayout from './components/layout/MainLayout/MainLayout';
 import Homepage from '../src/components/views/Homepage/Homepage';
 import Kitchen from '../src/components/views/Kitchen/Kitchen';
 import Tables from '../src/components/views/Tables/Tables';
-import Waiter from '../src/components/views/Waiter/Waiter';
+import Waiter from '../src/components/views/Waiter/WaiterContainer';
 import Booking from '../src/components/views/Booking/Booking';
 import BookingId from '../src/components/views/Booking/BookingId';
 import BookingNew from '../src/components/views/Booking/BookingNew';

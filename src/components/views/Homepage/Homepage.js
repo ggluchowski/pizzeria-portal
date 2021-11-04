@@ -46,7 +46,6 @@ const Homepage = () => (
     </div>
     <div>
 
-
       <h3>Lista rezerwacji na aktualny dzień:</h3>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">

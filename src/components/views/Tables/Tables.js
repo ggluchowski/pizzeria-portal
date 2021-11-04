@@ -76,20 +76,13 @@ const Tables = () => (
 
                 <TableCell align="center">{row.details}</TableCell>
                 <TableCell align="center">
-                  {row.type === 'event' ? (
-                    <Link to={{
-                      pathname: process.env.PUBLIC_URL + `/tables/pizzaEvents/${row.number}`,
-                      state: { ...row },
-                    }}
-                    >Event EDIT</Link>
-                  ) : (
-                    <Link to={{
-                      pathname: process.env.PUBLIC_URL + `/tables/booking/${row.number}`,
-                      state: { ...row },
-                    }}
-                    >Booking EDIT</Link>
-                  )
-                  }</TableCell>
+                  <Link to={{
+                    pathname: process.env.PUBLIC_URL
+                      + `/tables/${row.type === 'event' ? 'pizzaEvents' : 'booking'}/${row.number}`,
+                    state: { ...row },
+                  }}
+                  >EDIT</Link>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
